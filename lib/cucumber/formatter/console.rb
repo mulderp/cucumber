@@ -1,4 +1,4 @@
-require 'cucumber/formatter/ansicolor'
+require 'cucumber/formatter/ansi_escapes'
 require 'cucumber/formatter/duration'
 require 'cucumber/formatter/summary'
 
@@ -7,7 +7,7 @@ module Cucumber
     # This module contains helper methods that are used by formatters
     # that print output to the terminal.
     module Console
-      extend ANSIColor
+      extend AnsiEscapes
       include Duration
       include Summary
 

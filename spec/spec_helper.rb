@@ -16,7 +16,7 @@ require 'cucumber'
 $KCODE='u' unless Cucumber::RUBY_1_9
 
 RSpec.configure do |c|
-  c.before do
-    ::Term::ANSIColor.coloring = true
-  end
+#  c.before do
+#    ::Term::ANSIColor.coloring = true
+#  end
 end

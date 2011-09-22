@@ -1,5 +1,5 @@
 require 'cucumber/cli/profile_loader'
-require 'cucumber/formatter/ansicolor'
+require 'cucumber/formatter/ansi_escapes'
 
 module Cucumber
   module Cli

@@ -82,7 +82,20 @@ module Cucumber
           ALIASES["#{key}_arg"].split(',').map{|color| COLORS[color]}.join('')
         end
       end
-      
+     
+    def self.coloring?
+      @coloring
+    end
+
+    # Turns the coloring on or off globally, so you can easily do
+    # this for example:
+    # Term::ANSIColor::coloring = STDOUT.isatty
+    def self.coloring=(val)
+      @coloring = val
+    end
+    self.coloring = true
+
+ 
       def reset
         "\e[0m"
       end
